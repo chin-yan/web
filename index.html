@@ -2,6 +2,30 @@
   <head>
     <title>咖啡廳介紹</title><br>
     <h1 align=center><font face="monospace">15組 咖啡廳介紹</font></h1>
+    <meta charset="utf-8">
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+  </script>
+  <script> 
+      $(document).ready(function(){
+      $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+    });
+  });
+  </script>
+  <style type="text/css"> 
+  #panel,#flip
+  {
+	  padding:5px;
+	  text-align:center;
+	  background-color:#e5eecc;
+	  border:solid 1px #c3c3c3;
+  }
+  #panel
+  {
+	  padding:50px;
+	  display:none;
+  }
+  </style>
   </head>
  
   <body>
@@ -11,7 +35,8 @@
       <input type="button" value="適合讀書" style="width=40px;height=20px;font-size:20px" onclick="javascript:location.href='https://chin-yan.github.io/web-study/'" >&nbsp;&nbsp;&nbsp;&nbsp;
       <input type="button" value="適合聊天" style="width=40px;height=20px;font-size:20px" onclick="javascript:location.href='https://david20001110.github.io/coffee/'" >
     </center>
-      <br><center><b><p>組員:</p></b></center>
+      <div id="flip"><b>15組 咖啡廳介紹</b></div>
+      <div id="panel"> <center><b><p>組員:</p></b></center>
         <center><p>資工二甲:呂芷晏 408261539</p></center>
         <center><p>資工二甲:賴禹彤 408261498</p></center>
         <center><p>資工二甲:劉曜瑋 408261319</p></center>
@@ -25,10 +50,8 @@
       <center><p>因為網路的方便,所以很多人在選擇前都會先用手機做功課,</p></center>
       <center><p>看看別人的評論,再做決定,但很少有可以依照分類搜尋的網頁.</p></center>
       <center><p>所以我們希望將自己的實際感想和拍的照片放在一個網頁介紹,</p></center>
-      <center><p>做各方面比較,讓人可以找到更多想要的相關資訊~~</p></center>
-     
+      <center><p>做各方面比較,讓人可以找到更多想要的相關資訊~~</p></center></div>
    </body>
-
 </html>
 
 <style>
